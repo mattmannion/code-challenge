@@ -1,8 +1,11 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import type { AppProps } from 'next/app';
+import '/sass/_scss/main.scss';
 
-function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+export default function MyApp({ Component, pageProps }: AppProps) {
+  return (
+    <>
+      <h1 style={{ textAlign: 'center' }}>City Search</h1>
+      <Component {...pageProps} />
+    </>
+  );
 }
-
-export default MyApp
