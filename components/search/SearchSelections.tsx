@@ -38,7 +38,17 @@ export function SearchSelections({
 
   return (
     <div className='components__search-selections'>
-      <div className='components__search-selection-btns'>
+      <div
+        className='components__search-selection-clear'
+        onClick={(e) => {
+          e.preventDefault();
+
+          setSelections([]);
+        }}
+      >
+        clear
+      </div>
+      <div className='components__search-selection-controls'>
         <button
           className='components__search-selection-btn'
           ref={prevRef}

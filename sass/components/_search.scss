@@ -111,14 +111,15 @@
 
     animation: fade-in ease-in 500ms;
 
-    transition: background-color 250ms;
+    transition: background-color 250ms, color 250ms;
 
     &:hover {
-      background-color: #aaa;
+      color: white;
+      background-color: red;
     }
   }
 
-  &__search-selection-btns {
+  &__search-selection-controls {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -154,6 +155,30 @@
 
     &--hide {
       opacity: 0;
+    }
+  }
+
+  &__search-selection-clear {
+    font-weight: bold;
+    color: black;
+    margin: 0 0.5rem;
+
+    background-color: white;
+    padding: 0.5rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+
+    --timer: 333ms;
+    transition: background-color var(--timer), color var(--timer);
+
+    border: none;
+    border-radius: 10px;
+
+    margin-bottom: 1rem;
+
+    &:hover {
+      color: white;
+      background-color: red;
     }
   }
 }

@@ -16,7 +16,17 @@ export function Home({ locations }: HomeProps) {
   const optionsRef = useRef<HTMLDivElement>({} as HTMLDivElement);
 
   return (
-    <div className='home'>
+    <div
+      className='home'
+      // this give the search results box a modal feel
+      // clicking outside of the box will close it
+      onClick={(e) => {
+        e.preventDefault();
+
+        searchRef.current.value = '';
+        setSearch([]);
+      }}
+    >
       <SearchBar
         locations={locations}
         optionsRef={optionsRef}

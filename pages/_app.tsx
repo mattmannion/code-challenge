@@ -7,7 +7,6 @@ export default function MyApp({ Component, pageProps }: AppProps) {
     <>
       <h1 style={{ textAlign: 'center' }}>City Search</h1>
       <Component {...pageProps} />
-      <Footer />
     </>
   );
 }
