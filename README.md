@@ -1,6 +1,6 @@
 # My notes
 
-I only used one page for this challenge. We could use the page system to move between results if desired. I went with a pagination based on Array.slice since its only 5 results per chunk and thought feeding any one chunk of interest to a new [slug].tsx was overkill. only package added was scss since that was allowed. I wouldn't mind testing this, but I'd like an interview or at least a phone screen before going further. Thanks for your time.
+I only used one page for this challenge. We could use the page system to move between results if desired. I went with pagination based on Array.slice since its only 5 results per chunk and thought feeding any one chunk of interest to a new [slug].tsx was overkill. only package added was scss since that was allowed. I wouldn't mind testing this, but I'd like an interview or at least a phone screen before going further. Thanks for your time.
 
 -Matt Mannion
 
