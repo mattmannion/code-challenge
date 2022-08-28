@@ -8,6 +8,7 @@ interface HomePageProps {
 }
 
 export default function HomePage({ locations }: HomePageProps) {
+  console.log(locations);
   return (
     <div>
       <Home locations={locations} />

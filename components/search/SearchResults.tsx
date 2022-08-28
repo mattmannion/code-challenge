@@ -20,13 +20,8 @@ export function SearchResults({
   setSelections,
 }: SearchResults) {
   return (
-    <div
-      className='components__search-results'
-      ref={optionsRef}
-      id='search-results'
-    >
+    <div className='components__search-results' ref={optionsRef}>
       {search.map((l) =>
-        // {select.map((l) =>
         l.map(({ city, state }) => (
           <div
             className='components__search-result'

@@ -22,7 +22,7 @@ export function FetchLocations(): Locations {
   return cities_json
     .sort((a, b) => a.state.localeCompare(b.state))
     .map(({ state, cities }) =>
-      cities.sort().map((city) => ({
+      cities.map((city) => ({
         state: state.toLowerCase(),
         city: city.toLowerCase(),
       }))
